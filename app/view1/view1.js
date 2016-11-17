@@ -18,5 +18,10 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.authService'])
     $scope.user.username = "";
     $scope.user.password = "";
   };
-
+  vm.isConnected = function(){
+    auth.isConnected();
+  };
+  vm.logout = function() {
+    auth.logout (vm.user);
+  };
 }]);

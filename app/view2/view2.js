@@ -28,9 +28,6 @@ angular.module('myApp.view2', ['ngRoute', 'myApp.authService'])
     { name: 'jean'},
     { name: 'pierre'}
   ];
-  vm.logout = function() {
-    auth.logout (vm.user);
-  };
   vm.isConnected = function() {
     auth.isConnected();
   }
