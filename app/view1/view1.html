@@ -1,6 +1,5 @@
 <p>This is the partial for view 1.</p>
-<div ng-hide="isConnected()">
-<div id="login_user">
+<div id="login_user" ng-hide="isConnected()">
     <input type="text" placeholder="Login" ng-model="user.username">
     <input type="password" placeholder="Password" ng-model="user.password">
     <button
@@ -9,7 +8,6 @@
     <button type="reset"
             ng-click="clear()"> Reset
     </button>
-</div>
 </div>
 <div ng-show="isConnected()">
     <h2>Hello,{{user.username}}</h2>
