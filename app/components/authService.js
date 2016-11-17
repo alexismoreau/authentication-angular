@@ -14,15 +14,10 @@ function authService($http){
 
   var service = {
     login: login,
-    user: user
+    user: user,
+    logout: logout,
+    isConnected: isConnected
   };
-  function isConnected() {
-    return connected;
-  }
-  function logout(user) {
-    connected = false;
-    //redir vers view1
-  }
   //user = { password, username}
   function login(userInfos) {
 
@@ -49,6 +44,13 @@ function authService($http){
       console.log('test2');
       return console.log("Error : " + err.data);
     }*/
+  }
+  function isConnected() {
+    return connected;
+  }
+  function logout(user) {
+    connected = false;
+    //redir vers view1
   }
   return service;
 }
