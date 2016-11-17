@@ -48,7 +48,7 @@ function authService($http){
   function isConnected() {
     return connected;
   }
-  function logout(user) {
+  function logout() {
     connected = false;
     //redir vers view1
   }
