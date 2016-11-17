@@ -14,6 +14,9 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.authService'])
   vm.login = function() {
     auth.login( vm.user );
   };
-
+  vm.clear = function() {
+    $scope.user.username = "";
+    $scope.user.password = "";
+  };
 
 }]);
