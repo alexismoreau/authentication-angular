@@ -19,7 +19,7 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.authService'])
     $scope.user.password = "";
   };
   vm.isConnected = function(){
-    auth.isConnected();
+    return auth.isConnected();
   };
   vm.logout = function() {
     auth.logout (vm.user);
