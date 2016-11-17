@@ -7,7 +7,8 @@ function authService($http){
   "use strict";
   //var host = 'http://localhost:8000';
   var user = {
-    username: 'test', password: 'test'
+    username: 'test',
+    password: 'test'
   };
   var connected = false;
 
@@ -24,7 +25,9 @@ function authService($http){
   }
   //user = { password, username}
   function login(userInfos) {
-    if (userInfos in user){
+
+    if (userInfos.username === user.username &&
+      userInfos.password === user.password){
       console.log("user logged");
       connected = true;
       return true;
