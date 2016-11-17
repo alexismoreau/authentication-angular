@@ -1,3 +1,8 @@
+Requirements:
+- Bower
+- npm
+- angular
+
 bower install; npm install; npm start;
 
-go on http://localhost:8000
+browse to http://localhost:8000
