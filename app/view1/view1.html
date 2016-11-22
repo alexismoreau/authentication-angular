@@ -1,15 +1,23 @@
 <p>This is the partial for view 1.</p>
-<div id="login_user" ng-hide="isConnected()">
-    <input type="text" placeholder="Login" ng-model="user.username">
-    <input type="password" placeholder="Password" ng-model="user.password">
-    <button
-            ng-click="login(user.username)">Login
-    </button>
-    <button type="reset"
-            ng-click="clear()"> Reset
-    </button>
+
+<div id="login" ng-hide="isConnected()">
+    <div id="login_user">
+        <div id="login_form">
+            <input class="entry" type="text" placeholder="Login"
+                   ng-model="user.username">
+            <input class="entry" type="password" placeholder="Password"
+                   ng-model="user.password">
+            <button class="btn"
+                    ng-click="login(user.username)">Login
+            </button>
+            <button class="btn" type="reset"
+                    ng-click="clear()"> Reset
+            </button>
+        </div>
+    </div>
 </div>
-<div ng-show="isConnected()">
-    <h2>Hello,{{user.username}}</h2>
-    <button ng-click="logout()">Logout</button>
+
+<div id="logged" ng-show="isConnected()">
+    <h2>Hello, {{user.username}}</h2>
+    <button class="btn" ng-click="logout()">Logout</button>
 </div>

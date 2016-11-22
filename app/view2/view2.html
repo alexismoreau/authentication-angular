@@ -3,3 +3,8 @@
 <div class="container" ng-hide="isConnected()">
   <h2>Unauthorized</h2>
 </div>
+
+<div id="logged" ng-show="isConnected()">
+  <h2>Hello, {{user.username}}</h2>
+  <button class="btn" ng-click="logout()">Logout</button>
+</div>

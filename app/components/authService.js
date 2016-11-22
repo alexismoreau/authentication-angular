@@ -10,6 +10,7 @@ function authService($http){
     username: 'test',
     password: 'test'
   };
+
   var connected = false;
 
   var service = {

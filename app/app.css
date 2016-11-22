@@ -1,25 +1,79 @@
 /* app css stylesheet */
 
+body {
+    font-family: Arial;
+}
+
 .menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
 }
 
 .menu:before {
-  content: "[";
+    content: "[";
 }
 
 .menu:after {
-  content: "]";
+    content: "]";
 }
 
 .menu > li {
-  display: inline;
+    display: inline;
 }
 
 .menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+    content: "|";
+    padding-right: 0.3em;
+}
+
+#login {
+    margin: 20px auto;
+    width: 25em;
+    background-color: #3498DB;
+    padding: 50px;
+}
+
+#logged {
+    text-align: center;
+}
+
+#login_user {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#login_form {
+    text-align: center;
+}
+
+.entry {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+    margin-bottom: 10px;
+}
+
+.btn {
+    border: 2px solid transparent;
+    background: #3498DB;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    width: 125px;
+    margin: 0 auto;
 }
