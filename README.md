@@ -1,4 +1,4 @@
-This an fake authentication system with angularJS
+This is a fake authentication system with angularJS
 
 # Requirement:
 - Bower
@@ -11,3 +11,6 @@ bower install; npm install; npm start;
 
 # Enjoy
 browse to http://localhost:8000
+The authorized user is:
+- username : test
+- password : test
